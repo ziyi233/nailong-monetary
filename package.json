@@ -1,22 +1,63 @@
 {
   "name": "koishi-plugin-nailong-monetary",
-  "description": "自用劣化版monetary",
-  "version": "0.0.1",
+  "description": "Monetary System for nailon gbot",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
-    "dist"
+    "src"
   ],
+  "author": "ziyi233",
   "license": "MIT",
-  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziyi233/nailong-monetary.git",
+    "directory": "packages/monetary"
+  },
+  "bugs": {
+    "url": "https://github.com/ziyi233/nailong-monetary/issues"
+  },
+  "koishi": {
+    "description": {
+      "en": "Monetary System for nailong bot",
+      "zh": "奶龙bot自用货币系统"
+    },
+    "service": {
+      "implements": [
+        "monetary"
+      ],
+      "required": [
+        "database"
+      ],
+      "optional": [
+        "profile"
+      ]
+    }
+  },
   "keywords": [
+    "bot",
     "chatbot",
     "koishi",
-    "plugin"
+    "plugin",
+    "monetary",
+    "currency",
+    "money",
+    "economy",
+    "economics",
+    "system",
+    "service"
   ],
-  "devDependencies": {},
   "peerDependencies": {
-    "koishi": "^4.18.7"
+    "koishi": "^4.15.3"
+  },
+  "devDependencies": {
+    "@koishijs/plugin-help": "^2.3.3",
+    "@types/node": "^20.8.9",
+    "atsc": "^1.2.2",
+    "koishi": "^4.15.3",
+    "koishi-plugin-profile": "^1.0.3",
+    "koishi-plugin-rate-limit": "^2.0.0",
+    "typescript": "^5.2.2"
   }
 }
