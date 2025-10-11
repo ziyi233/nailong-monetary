@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-nailong-monetary",
   "description": "Monetary System for nailon gbot",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -21,7 +21,7 @@
   "koishi": {
     "description": {
       "en": "Monetary System for nailong bot",
-      "zh": "奶龙bot自用货币系统"
+      "zh": "奶龙bot自用货币系统，给monetary表增加了userId，可以在指令管理指定不同指令使用的货币类型，扣费后会输出货币余额。"
     },
     "service": {
       "implements": [
