@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "../dist",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "types": ["vite/client"],
+    "jsx": "preserve"
+  },
+  "include": ["."]
+}
